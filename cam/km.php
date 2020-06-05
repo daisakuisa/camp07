@@ -51,7 +51,7 @@
               <li class="nav-item"><a href="#news">マガジン</a></li>
               <li class="nav-item"><a href="#access">アクセス</a></li>
               <li class="nav-item"><a href="#contact">コンタクト</a></li>
-              <li class="nav-item"><a href="km/km.php">投稿</a></li>
+              <li class="nav-item"><a href="km.php">投稿</a></li>
             </ul>
           </nav>
         </div>
@@ -59,7 +59,7 @@
     </header>
     <!--//header-->
 <!-- コメントフォーム -->
-    <form action="km_insert.php" method="post" enctype="multipart/form-data">
+    <form  method="post" action="km_insert.php" enctype="multipart/form-data">
     <p class="km-thumb">
     <img src="https://placehold.jp/400x400.png" alt=""></p>
 <dt>画像</dt>
@@ -70,7 +70,6 @@
 <dd><input type="text" name="km_pl" placeholder="" class="km_pl"></dd>
 <dt>コメント</dt>
 <dd><textarea name="km_text" id="" cols="30" rows="10">お酒や食べ物について紹介</textarea></dd>
-
 
 <ul>
     <li>

@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!--header-->
@@ -23,7 +23,7 @@
           >
         </h1>
         
-        <img src="image/top/sake06.png" alt="肴の画像" />
+        <img src="image/top/sake03.png" alt="肴の画像" />
       </div>
 
       <div class="header-above">
@@ -45,7 +45,7 @@
               <li class="nav-item"><a href="#news">マガジン</a></li>
               <li class="nav-item"><a href="#access">アクセス</a></li>
               <li class="nav-item"><a href="#contact">コンタクト</a></li>
-              <li class="nav-item"><a href="km/km.php">投稿</a></li>
+              <li class="nav-item"><a href="ki.php">投稿</a></li>
             </ul>
           </nav>
         </div>
@@ -53,11 +53,8 @@
     </header>
     <!--//header-->
 <!-- コメントフォーム -->
-    <form action="ki_insert.php" method="post" enctype="multipart/form-data">
-    <p class="km-thumb">
-    <img src="https://placehold.jp/400x400.png" alt=""></p>
-<dt>画像</dt>
-<dd><input type="file" name="fname" class="cms-item"accept="image/*"></dd>
+    <form  method="post"  action="ki_insert.php">
+    
 <dt>名前</dt>
 <dd><input type="text" name="km_name" placeholder="お名前" class="km_name"></dd>
 <dt>場所</dt>

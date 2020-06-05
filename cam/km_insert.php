@@ -1,20 +1,24 @@
 <?php
-if(!isset($_POST["km_name"])  ||  $_POST["km_name"]==""){
-exit("ParameError!name!");
-}
-if(!isset($_POST["km_text"])  ||  $_POST["km_text"]==""){
-exit("ParameError!text!");
-}
-if(!isset($_FILES["fname"]["name"])  ||  $_POST["fname"]["name"]==""){
-exit("ParameError!Files!");
-}
+// if(!isset($_POST["km_name"])  ||  $_POST["km_name"]==""){
+// exit("ParameError!name!");
+// }
+// if(!isset($_POST["km_pl"])  ||  $_POST["km_pl"]==""){
+// exit("ParameError!name!");
+// }
+// if(!isset($_POST["km_text"])  ||  $_POST["km_text"]==""){
+// exit("ParameError!text!");
+// }
+// if(!isset($_FILES["fname"]["name"])  ||  $_POST["fname"]["name"]==""){
+// exit("ParameError!Files!");
+// }
 
 $fname = $_FILES["fname"]["name"];
 $km_name = $_POST["km_name"];
+$km_pl = $_POST["km_pl"];
 $km_text = $_POST["km_text"];
 
 $upload = "../img/";
-if(move_uploaded_file($_FILES["fname"]["name"], $upload.$fname)){
+if(move_uploaded_file($_FILES['fname']['tmp_name'], $upload.$fname)){
   
 }else{
   echo"Upload filed";
@@ -30,10 +34,11 @@ try {
 return $pdo;
 
 
-$stmt = $pdo->prepare("INSERT INTO gs_km_table(id, km_name, km_text, fname,
+$stmt = $pdo->prepare("INSERT INTO gs_km_table(id, km_name, km_pl, km_text, fname,
 indate )VALUES(NULL, :km_name, :km_text, :fname, :sysdate())");
 
 $stmt->bindValue(':km_name', $km_name, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
+$stmt->bindValue(':km_pl', $km_pl, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':km_text', $km_text, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':fname', $fname, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $status = $stmt->execute();

@@ -60,11 +60,14 @@
     <!--//header-->
 <!-- コメントフォーム -->
     <form action="km_insert.php" method="post" enctype="multipart/form-data">
-    <p class="km-thumb"></p>
+    <p class="km-thumb">
+    <img src="https://placehold.jp/400x400.png" alt=""></p>
 <dt>画像</dt>
 <dd><input type="file" name="fname" class="cms-item"accept="image/*"></dd>
 <dt>名前</dt>
 <dd><input type="text" name="km_name" placeholder="お名前" class="km_name"></dd>
+<dt>場所</dt>
+<dd><input type="text" name="km_pl" placeholder="" class="km_pl"></dd>
 <dt>コメント</dt>
 <dd><textarea name="km_text" id="" cols="30" rows="10">お酒や食べ物について紹介</textarea></dd>
 
@@ -85,5 +88,9 @@
       </div>
     </footer>
     <!--// footer-->
+    <!-- jqueryを使う時はここでCDNを読み込みます（必ず先に読み込む） -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- ここにjsを読み込みます -->
+    <script src="js/app.js"></script>
   </body>
 </html>

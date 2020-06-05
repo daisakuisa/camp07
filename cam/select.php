@@ -1,7 +1,7 @@
 <?php
-session_start();
-include("func.php");
-loginCheck();
+// session_start();
+// include("func.php");
+// loginCheck();
 
 ?>
 
@@ -47,11 +47,11 @@ loginCheck();
           <nav class="nav-outer">
             <ul class="nav clearfix">
               <li class="nav-item"><a href="#about">サケトアテタノシミタイとは？</a></li>
-              <li class="nav-item"><a href="#course">活</a></li>
+              <li class="nav-item"><a href="#katu">活</a></li>
               <li class="nav-item"><a href="#news">マガジン</a></li>
               <li class="nav-item"><a href="#access">アクセス</a></li>
               <li class="nav-item"><a href="#contact">コンタクト</a></li>
-              <li class="nav-item"><a href="ki.php">投稿</a></li>
+              <li class="nav-item"><a href="km.php">投稿</a></li>
             </ul>
           </nav>
         </div>
@@ -98,7 +98,7 @@ loginCheck();
     <!--// about-->
 
     <!--katu-->
-    <section id="course">
+    <section id="katu">
       <div class="layout-course">
         <h2 class="section-title section-title__modifier-primary">
           活<span class="section-title__ja">活とは？</span>

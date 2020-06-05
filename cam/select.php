@@ -29,7 +29,6 @@ loginCheck();
             >お気に入りのお酒と肴が見つかるサイト</span
           >
         </h1>
-        <!-- <img src="images/header/hero_img.jpg" alt="チーズの画像" /> -->
         <img src="image/top/sake03.png" alt="肴の画像" />
       </div>
 
@@ -52,7 +51,7 @@ loginCheck();
               <li class="nav-item"><a href="#news">マガジン</a></li>
               <li class="nav-item"><a href="#access">アクセス</a></li>
               <li class="nav-item"><a href="#contact">コンタクト</a></li>
-              <li class="nav-item"><a href="km.php">投稿</a></li>
+              <li class="nav-item"><a href="ki.php">投稿</a></li>
             </ul>
           </nav>
         </div>
@@ -322,5 +321,9 @@ loginCheck();
       </div>
     </footer>
     <!--// footer-->
+    <!-- jqueryを使う時はここでCDNを読み込みます（必ず先に読み込む） -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- ここにjsを読み込みます -->
+    <script src="js/app.js"></script>
   </body>
 </html>
